@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warning: Potentially Unsafe Site</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      .warning-container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #e74c3c;
+      }
+      p {
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #2980b9;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warning-container">
+      <h1>Warning: Potentially Unsafe Site</h1>
+      <p>
+        The site you are trying to access has been classified as potentially
+        unsafe.
+      </p>
+      <p>
+        Please proceed with caution or
+        <a href="#" id="continueLink">continue to the site</a> at your own risk.
+      </p>
+    </div>
+
+    <script src="warning.js"></script>
+  </body>
+</html>

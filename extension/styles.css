@@ -1,0 +1,13 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+canvas {
+    width: 70px !important;  /* Force canvas width */
+    height: 80px !important; /* Force canvas height */
+}

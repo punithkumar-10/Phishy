@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fetch URL</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #1f1f2291;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 150px;
+        margin: 10px 0 0 75px;
+        border: 5px solid coral;
+        animation: mymove 5s infinite;
+      }
+
+      button:hover {
+        background-color: #ffffff;
+        color: black;
+      }
+
+      .output {
+        margin-top: 10px;
+      }
+
+      .mainbox {
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        min-height: 100%;
+        margin: -9px;
+        height: 450px;
+      }
+      @keyframes mymove {
+        50% {
+          border-color: rgb(216, 173, 230);
+        }
+      }
+      .output {
+        color: aliceblue;
+        text-align: center;
+        font-family: monospace;
+      }
+
+      #sms {
+        border-radius: 25px;
+        background-color: #1f1f2291;
+        border-color: #1f1f2291;
+        height: 25px;
+        color: aliceblue;
+        margin: 16px 0px 0px 25px;
+        border-style: none;
+        width: 250px;
+      }
+
+      #sms:hover {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: black;
+        border-style: none;
+      }
+      .chart {
+        width: fit-content;
+      }
+      #phishy_count {
+        color: #c42b3f;
+        font-family: fantasy;
+        font-size: x-large;
+      }
+      #non_phishy_count {
+        color: #3b9d64;
+        font-family: fantasy;
+        font-size: x-large;
+      }
+      #result-url {
+        font-size: x-large;
+      }
+      #result-input {
+        font-size: x-large;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainbox">
+      <div class="top-logo">
+        <img
+          src="file (3) (1).png"
+          style="height: 100px; text-align: center; margin-left: 28%"
+        />
+      </div>
+      <input type="text" id="sms" placeholder="Enter the sms/mail/url" />
+      <button id="check">Check</button>
+      <div id="fetched-url" class="output"></div>
+      <div id="result-url" class="output"></div>
+      <div id="result-input" class="output"></div>
+      <div id="phishy_count" class="output"></div>
+      <div id="non_phishy_count" class="output"></div>
+      <!-- <div class="chart">
+      <canvas id="myPieChart" width="80" height="80"></canvas>
+      </div>
+      <script src="chart.js"></script>
+      <script src="script.js"></script> -->
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
